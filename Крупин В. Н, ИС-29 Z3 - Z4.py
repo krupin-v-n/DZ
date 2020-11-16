@@ -130,8 +130,8 @@ N = int(input("Количество столбцов: "))
 m = list(map(int, input("Введите элементы через пробел в одну строку: ").split()))
 mnp = np.array(m).reshape(M, N)
 max = 0
-for i in range(3):
-     for j in range(3):
+for i in range(M):
+     for j in range(N):
         if mnp[i][j] > max:
             max = mnp[i][j]
             save = i
@@ -141,7 +141,7 @@ print(mnp)
 
 # Matrix 20
 
-# Дана матрица размера M ×N. Для каждого столбца матрицы найти произведение его элементов.
+# Дана матрица размера M × N. Для каждого столбца матрицы найти произведение его элементов.
 
 import numpy as np
 M = int(input("Количество строк: "))
