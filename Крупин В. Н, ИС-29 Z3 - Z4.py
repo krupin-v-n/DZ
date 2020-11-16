@@ -113,7 +113,7 @@ for i in range(N):
     c = int(input("Введите число: "))
     a.append(c)
 for i in range(1, N-1):
-        if a[i] < a[i-1] and a[i] < a[i-1]:
+        if a[i] < a[i-1] and a[i] < a[i+1]:
             savei.append(i)
 for j in range(len(savei)):
     h = savei[j]
